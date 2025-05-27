@@ -11,10 +11,28 @@ Una aplicación Android desarrollada en Kotlin que permite calcular propinas de 
 
 ## Tecnologías Utilizadas
 
-- Kotlin
-- Android SDK
-- Material Design
-- Gradle
+### Lenguaje y Framework
+- Kotlin 1.9.0
+- Android SDK 34
+- Gradle 8.0
+
+### UI/UX
+- Material Design 3
+- ConstraintLayout
+- RecyclerView
+- CardView
+- Material Components
+
+### Arquitectura y Patrones
+- MVVM (Model-View-ViewModel)
+- LiveData
+- ViewBinding
+- Coroutines para operaciones asíncronas
+
+### Herramientas de Desarrollo
+- Android Studio Hedgehog
+- Git para control de versiones
+- GitHub para gestión del repositorio
 
 ## Requisitos
 
