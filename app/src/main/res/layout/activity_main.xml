@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Título principal -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculadora de Propinas"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Ingresar monto de la cuenta -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingresa el monto de la cuenta"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="€"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/billAmountInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Elegir porcentaje de propina -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elige el porcentaje de propina"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="8dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tip10Button"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="10%"
+                app:cornerRadius="24dp"
+                app:strokeColor="@color/colorPrimary"
+                app:strokeWidth="2dp"
+                app:iconTint="@color/colorPrimary"
+                app:backgroundTint="@color/light_blue"
+                android:elevation="4dp"
+                app:icon="@drawable/ic_percent"
+                app:iconGravity="textStart"
+                app:iconSize="20dp" />
+
+            <Space
+                android:layout_width="8dp"
+                android:layout_height="0dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tip15Button"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="15%"
+                app:cornerRadius="24dp"
+                app:strokeColor="@color/colorPrimary"
+                app:strokeWidth="2dp"
+                app:iconTint="@color/colorPrimary"
+                app:backgroundTint="@color/light_blue"
+                android:elevation="4dp"
+                app:icon="@drawable/ic_percent"
+                app:iconGravity="textStart"
+                app:iconSize="20dp" />
+
+            <Space
+                android:layout_width="8dp"
+                android:layout_height="0dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tip20Button"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="20%"
+                app:cornerRadius="24dp"
+                app:strokeColor="@color/colorPrimary"
+                app:strokeWidth="2dp"
+                app:iconTint="@color/colorPrimary"
+                app:backgroundTint="@color/light_blue"
+                android:elevation="4dp"
+                app:icon="@drawable/ic_percent"
+                app:iconGravity="textStart"
+                app:iconSize="20dp" />
+        </LinearLayout>
+
+        <!-- Propina personalizada -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Propina personalizada (%)"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginBottom="2dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/customTipInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingresa aquí un porcentaje diferente si no quieres usar los botones rápidos."
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center" />
+
+        <!-- Dividir cuenta -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dividir entre"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/minusButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="-"
+                app:icon="@drawable/ic_arrow_back"
+                app:iconGravity="textStart"
+                app:cornerRadius="24dp"
+                app:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:elevation="4dp" />
+
+            <TextView
+                android:id="@+id/peopleCountText"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/colorPrimary" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/plusButton"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:elevation="4dp"
+                android:text="+"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/colorPrimary"
+                app:cornerRadius="24dp"
+                app:icon="@android:drawable/ic_input_add"
+                app:iconGravity="textStart" />
+        </LinearLayout>
+
+        <!-- Botón calcular -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/calculateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Calcular"
+            app:cornerRadius="24dp"
+            app:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:elevation="6dp" />
+
+    </LinearLayout>
+</ScrollView>
