@@ -2,7 +2,7 @@
 
 Una aplicación móvil moderna y elegante para calcular propinas de manera rápida y sencilla.
 
-![Calculadora de Propinas](assets/images/Screenshot_2025-06-03-17-16-35-113_com.example.calculadoradeproprina.jpg)
+![Calculadora de Propinas](assets/images/app-screenshot.jpg)
 
 ## Características
 
