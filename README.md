@@ -2,7 +2,7 @@
 
 Una aplicación Android desarrollada en Kotlin que permite calcular propinas de manera rápida y sencilla.
 
-<img alt="Calculadora de Propinas" width="150"/>
+<img src="assets/images/app-screenshot.jpg" alt="Calculadora de Propinas" width="150"/>
 
 ## Características
 
@@ -65,10 +65,10 @@ git clone https://github.com/JosueMairao/Calculadora-de-Propina.git
 ## Capturas de Pantalla
 
 ### Pantalla Principal
-<img alt="Pantalla Principal" width="150"/>
+<img src="assets/images/Screenshot_2025-06-03-17-16-59-377_com.example.calculadoradeproprina.jpg" alt="Pantalla Principal" width="150"/>
 
 ### Cálculo de Propina
-<img alt="Cálculo de Propina" width="150"/>
+<img src="assets/images/Screenshot_2025-06-03-17-17-05-684_com.example.calculadoradeproprina.jpg" alt="Cálculo de Propina" width="150"/>
 
 ## Contribución
 
